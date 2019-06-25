@@ -23,6 +23,7 @@ export const commonConsts = {
     urls:{
         loginPageUrl: 'https://staging-wcs.c-b4.com/testme/#/login',
         forgotPasswordPageUrl: 'https://staging-wcs.c-b4.com/testme/#/reset',
-        registerPageUrl: 'https://staging-wcs.c-b4.com/testme/#/register'
+        registerPageUrl: 'https://staging-wcs.c-b4.com/testme/#/register',
+        supportPageUrl: 'https://staging-wcs.c-b4.com/testme/#/support'
     }
 };

@@ -10,7 +10,8 @@ export const commonConsts = {
         supportLink: '#support-link',
 
         fieldErrorSpan: '.field-error',
-        statusIndicator: '.status-indicator'
+        statusIndicator: '.status-indicator',
+        backButton: '.back-btn'
     },
   strings:{
         fakeUsername: 'fakeUsername@email.com',

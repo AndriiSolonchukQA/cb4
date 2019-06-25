@@ -23,4 +23,10 @@ context('Actions', () => {
             .should('have.class', 'error')
             .and('contain', commonConsts.strings.wrongUsernameErrorMessage);
     });
+
+       it('Checking if back link is valid', ()=>{
+        cy.get(commonConsts.locators.backButton)
+            .click()
+            .url().should('be.equal',commonConsts.urls.loginPageUrl);
+       });
 });

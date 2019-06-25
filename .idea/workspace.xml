@@ -79,8 +79,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/cypress/consts/common.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="19" column="33" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="33" />
+                <state relative-caret-position="137">
+                  <caret line="13" column="18" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="18" />
                 </state>
               </provider>
             </entry>
@@ -88,8 +88,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/cypress/integration/forgotPasswordPage.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="425">
-                  <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+                <state relative-caret-position="389">
+                  <caret line="29" column="69" selection-start-line="29" selection-start-column="69" selection-end-line="29" selection-end-column="69" />
                 </state>
               </provider>
             </entry>
@@ -264,12 +264,12 @@
       <workItem from="1561479442729" duration="1784000" />
       <workItem from="1561481289784" duration="1860000" />
       <workItem from="1561483191047" duration="1776000" />
-      <workItem from="1561485018982" duration="722000" />
+      <workItem from="1561485018982" duration="980000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45346000" />
+    <option name="totallyTimeSpent" value="45604000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -377,15 +377,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cypress/consts/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="33" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="33" />
+        <state relative-caret-position="137">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cypress/integration/forgotPasswordPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+        <state relative-caret-position="389">
+          <caret line="29" column="69" selection-start-line="29" selection-start-column="69" selection-end-line="29" selection-end-column="69" />
         </state>
       </provider>
     </entry>

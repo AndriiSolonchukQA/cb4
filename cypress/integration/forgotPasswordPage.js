@@ -9,7 +9,7 @@ context('Actions', () => {
     it('Checking empty field error occured', ()=>{
         cy.get(commonConsts.locators.submitButton)
             .click()
-            .get(commonConsts.locators.fieldErrorSpan)
+            .get(commonConsts.locators.fieldError)
             .should('have.class', 'opened')
             .and('contain', commonConsts.strings.emptyFieldErrorMessage);
     });

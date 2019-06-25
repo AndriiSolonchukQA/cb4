@@ -16,7 +16,7 @@ export const commonConsts = {
   },
     urls:{
         loginPageUrl: 'https://staging-wcs.c-b4.com/testme/#/login',
-        forgotPasswordPageUrl: 'https://staging-wcs.c-b4.com/testme/#/reset'
-
+        forgotPasswordPageUrl: 'https://staging-wcs.c-b4.com/testme/#/reset',
+        registerPageUrl: 'https://staging-wcs.c-b4.com/testme/#/register'
     }
 };

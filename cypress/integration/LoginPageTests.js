@@ -33,4 +33,10 @@ context('Actions', () => {
             .click()
             .url().should('be.equal', commonConsts.urls.forgotPasswordPageUrl);
     });
+
+    it('Check that register link is valid', () => {
+        cy.get(commonConsts.locators.registerLink)
+            .click()
+            .url().should('be.equal', commonConsts.urls.registerPageUrl);
+    });
 });

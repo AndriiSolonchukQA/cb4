@@ -17,6 +17,7 @@ export const commonConsts = {
         organizationNameInput: '#organizationName',
         regionInput: '#storeRegion',
         contactEmailInput: '#email',
+        contactEmailError: '.email .field-error',
         descriptionInput: '#description',
         validationError: '.validation-error-message'
     },
@@ -33,7 +34,8 @@ export const commonConsts = {
         loginFailedMessage: '405 Not Allowed',
         emptyFieldErrorMessage: 'Please fill in the above field',
         emptyFieldsAllErrorMessage: 'Please fill in all the above fields',
-        wrongUsernameErrorMessage: 'The email you entered was not found within our records.'
+        wrongUsernameErrorMessage: 'The email you entered was not found within our records.',
+        invalidEmailErrorMessage: 'Please use a valid email address'
     },
 
     urls:{

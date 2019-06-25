@@ -23,6 +23,7 @@ context('Actions', () => {
     });
 
     context('Cheching all neccessary fields are filled', () => {
+
         it('Checking your name field', () => {
              cy.get(commonConsts.locators.yourNameInput)
                  .type(commonConsts.strings.yourName);
@@ -54,6 +55,17 @@ context('Actions', () => {
                 .click()
                 .get(commonConsts.locators.validationError)
                 .should('not.be.visible');
+        });
+
+        it('Checking wrong email error message ', ()=>{
+            cy.get(commonConsts.locators.contactEmailInput)
+                .clear()
+                .type(commonConsts.strings.notAnEmail)
+                .get(commonConsts.locators.submitButton)
+                .click()
+                .get(commonConsts.locators.contactEmailError)
+                .should('have.class', 'opened')
+                .and('contain', commonConsts.strings.invalidEmailErrorMessage);
         });
     });
 

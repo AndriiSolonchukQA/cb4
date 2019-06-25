@@ -9,13 +9,15 @@ export const commonConsts = {
         registerLink: '#register-link',
         supportLink: '#support-link',
 
-        fieldErrorSpan: '.field-error'
+        fieldErrorSpan: '.field-error',
+        statusIndicator: '.status-indicator'
     },
   strings:{
         fakeUsername: 'fakeUsername@email.com',
         fakePassword: 'fakePassword',
         loginFailedMessage: '405 Not Allowed',
-        emptyFieldErrorMessage: 'Please fill in the above field'
+        emptyFieldErrorMessage: 'Please fill in the above field',
+        wrongUsernameErrorMessage: 'The email you entered was not found within our records.'
   },
     urls:{
         loginPageUrl: 'https://staging-wcs.c-b4.com/testme/#/login',

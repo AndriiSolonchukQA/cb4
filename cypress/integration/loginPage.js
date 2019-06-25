@@ -10,7 +10,7 @@ context('Actions', () => {
     it('Checking that page elements are visible', ()=>{
         cy.get(commonConsts.locators.usernameInput).should('be.visible');
         cy.get(commonConsts.locators.usernamePassword).should('be.visible');
-        cy.get(commonConsts.locators.loginButton).should('be.visible');
+        cy.get(commonConsts.locators.submitButton).should('be.visible');
         cy.get(commonConsts.locators.rememberMeCheckBox).should('be.visible');
         cy.get(commonConsts.locators.forgotPasswordLink).should('be.visible');
         cy.get(commonConsts.locators.registerLink).should('be.visible');
@@ -22,7 +22,7 @@ context('Actions', () => {
             .type(commonConsts.strings.fakeUsername)
             .get(commonConsts.locators.usernamePassword)
             .type(commonConsts.strings.fakePassword)//todo check text 'have.text' does not work
-            .get(commonConsts.locators.loginButton)
+            .get(commonConsts.locators.submitButton)
             .click() //todo check status code
             .get(commonConsts.locators.loginFailedMessage)
             .should('contain', commonConsts.strings.loginFailedMessage);

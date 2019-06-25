@@ -1,29 +1,28 @@
 import {commonConsts} from "../consts/common";
 
-context('Actions', () => {
+context('Login Page Tests', () => {
     beforeEach(() => {
-        cy.visit(commonConsts.urls.loginPageUrl);
-        cy.url().should('be.equal',commonConsts.urls.loginPageUrl)
-        //todo check and status code
+        cy.visit(commonConsts.urls.loginPageUrl)
+          .url().should('be.equal',commonConsts.urls.loginPageUrl)
     });
 
     it('Checking that page elements are visible', ()=>{
-        cy.get(commonConsts.locators.usernameInput).should('be.visible');
-        cy.get(commonConsts.locators.usernamePassword).should('be.visible');
-        cy.get(commonConsts.locators.submitButton).should('be.visible');
-        cy.get(commonConsts.locators.rememberMeCheckBox).should('be.visible');
-        cy.get(commonConsts.locators.forgotPasswordLink).should('be.visible');
-        cy.get(commonConsts.locators.registerLink).should('be.visible');
-        cy.get(commonConsts.locators.supportLink).should('be.visible');
+        cy.get(commonConsts.locators.usernameInput).should('be.visible')
+            .get(commonConsts.locators.usernamePassword).should('be.visible')
+            .get(commonConsts.locators.submitButton).should('be.visible')
+            .get(commonConsts.locators.rememberMeCheckBox).should('be.visible')
+            .get(commonConsts.locators.forgotPasswordLink).should('be.visible')
+            .get(commonConsts.locators.registerLink).should('be.visible')
+            .get(commonConsts.locators.supportLink).should('be.visible');
     });
 
     it('Checking negative scenario of the login process', () => {
         cy.get(commonConsts.locators.usernameInput)
             .type(commonConsts.strings.fakeUsername)
             .get(commonConsts.locators.usernamePassword)
-            .type(commonConsts.strings.fakePassword)//todo check text 'have.text' does not work
+            .type(commonConsts.strings.fakePassword)
             .get(commonConsts.locators.submitButton)
-            .click() //todo check status code
+            .click()
             .get(commonConsts.locators.loginFailedMessage)
             .should('contain', commonConsts.strings.loginFailedMessage);
     });

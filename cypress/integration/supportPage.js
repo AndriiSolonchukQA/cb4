@@ -1,14 +1,7 @@
 import {commonConsts} from "../consts/common";
+import {checkValidationErrorVisisble} from "../helpers/commonTestCases";
 
-const checkValidationErrorVisisble = () => {
-    return  cy.get(commonConsts.locators.submitButton)
-        .click()
-        .get(commonConsts.locators.validationError)
-        .should('be.visible')
-        .and('contain', commonConsts.strings.emptyFieldsAllErrorMessage);
-};
-
-context('Actions', () => {
+context('Suport Page tests', () => {
     before(() => {
         cy.visit(commonConsts.urls.supportPageUrl);
         cy.url().should('be.equal',commonConsts.urls.supportPageUrl)
@@ -68,6 +61,4 @@ context('Actions', () => {
                 .and('contain', commonConsts.strings.invalidEmailErrorMessage);
         });
     });
-
-
 });

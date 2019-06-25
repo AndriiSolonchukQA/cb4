@@ -1,6 +1,7 @@
 import {commonConsts} from "../consts/common";
+import {checkingBackLink} from "../helpers/commonTestCases";
 
-context('Actions', () => {
+context('Register page tests', () => {
     beforeEach(() => {
         cy.visit(commonConsts.urls.registerPageUrl);
         cy.url().should('be.equal',commonConsts.urls.registerPageUrl)
@@ -25,8 +26,6 @@ context('Actions', () => {
     });
 
     it('Checking if back link is valid', ()=>{
-        cy.get(commonConsts.locators.backButton)
-            .click()
-            .url().should('be.equal',commonConsts.urls.loginPageUrl);
+        checkingBackLink();
     });
 });

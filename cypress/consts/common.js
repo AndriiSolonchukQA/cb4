@@ -13,5 +13,10 @@ export const commonConsts = {
         fakeUsername: 'fakeUsername@email.com',
         fakePassword: 'fakePassword',
         loginFailedMessage: '405 Not Allowed'
-  }
+  },
+    urls:{
+        loginPageUrl: 'https://staging-wcs.c-b4.com/testme/#/login',
+        forgotPasswordPageUrl: 'https://staging-wcs.c-b4.com/testme/#/reset'
+
+    }
 };

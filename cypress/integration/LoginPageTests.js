@@ -2,8 +2,9 @@ import {commonConsts} from "../consts/common";
 
 context('Actions', () => {
     beforeEach(() => {
-        cy.visit('https://staging-wcs.c-b4.com/testme/#/login');
-        //todo check url and status code
+        cy.visit(commonConsts.urls.loginPageUrl);
+        cy.url().should('be.equal',commonConsts.urls.loginPageUrl)
+        //todo check and status code
     });
 
     it('Checking that page elements are visible', ()=>{
@@ -20,13 +21,16 @@ context('Actions', () => {
         cy.get(commonConsts.locators.usernameInput)
             .type(commonConsts.strings.fakeUsername)
             .get(commonConsts.locators.usernamePassword)
-            .type(commonConsts.strings.fakePassword)
+            .type(commonConsts.strings.fakePassword)//todo check text 'have.text' does not work
             .get(commonConsts.locators.loginButton)
             .click() //todo check status code
             .get(commonConsts.locators.loginFailedMessage)
             .should('contain', commonConsts.strings.loginFailedMessage);
     });
 
-
-
+    it('Check that forgot password link is valid', () => {
+        cy.get(commonConsts.locators.forgotPasswordLink)
+            .click()
+            .url().should('be.equal', commonConsts.urls.forgotPasswordPageUrl);
+    });
 });
